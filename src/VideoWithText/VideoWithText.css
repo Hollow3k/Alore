@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'brilliant';
+  src: url('/brillant.regular.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+   
+}
+
+/* Video takes full space */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps aspect ratio while covering container */
+  /* opacity: 0.5; */
+}
+
+/* Overlay container */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(243, 243, 243);
+  background: rgba(0, 0, 0, 0.3); /* optional dark overlay */
+}
+
+/* Text styles */
+.overlay-title {
+  font-family: 'brilliant', sans-serif;
+  font-size: 19rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+
+/* Optional responsive adjustments */
+@media (max-width: 768px) {
+  .overlay-title {
+    font-size: 2rem;
+  }
+}
+
+.overlay {
+  background: radial-gradient(circle at center, rgba(65, 34, 0, 0.2) 0%, rgba(17, 10, 0, 0.877) 100%);
+}
+
+.overlay-title {
+    background: radial-gradient(  #DCCCA3, #f7d277);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 25px rgba(255, 255, 255, 0.226);
+}
+
+.overlay-title {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1.5s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
