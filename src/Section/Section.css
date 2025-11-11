@@ -1,0 +1,6 @@
+.main{
+    min-height: 100vh;
+    background-image: linear-gradient(180deg, #251B11 0%, #000000 100%);
+    display: flex;
+    justify-content: center;
+}

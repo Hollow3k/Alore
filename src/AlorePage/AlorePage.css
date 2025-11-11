@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Cormorant', Georgia, serif;
+  background-color: #FCF6ED;
+  color: #251B11;
+}
+
+.alore-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FCF6ED;
+  color: #251B11;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+  min-height: auto;
+}
+
+.hero-text {
+  flex: 0 1 50%;
+  min-width: 0;
+}
+
+.hero-main {
+  font-size: clamp(32px, 6vw, 72px);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+.alore-text {
+  font-weight: 700;
+  display: block;
+  margin-top: 8px;
+  font-size: clamp(32px, 6vw, 72px);
+}
+
+.hero-vogue {
+  flex: 0 1 50%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-width: 0;
+}
+
+.featured-label {
+  font-size: clamp(40px, 5vw, 50px);
+  font-weight: 400;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+.vogue-logo-container {
+  min-height: 80px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.vogue-logo {
+  max-height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+
+.vogue-description {
+  font-size: clamp(16px, 2vw, 22px);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Award Section */
+.award-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  min-height: auto;
+}
+
+.award-text {
+  font-size: clamp(24px, 4vw, 42px);
+  font-weight: 400;
+  text-align: center;
+  max-width: 100%;
+  line-height: 1.7;
+}
+
+/* Featured Logos Section */
+.featured-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 80px;
+  min-height: auto;
+}
+
+.featured-left {
+  flex: 0 1 50%;
+  min-width: 0;
+}
+
+.elle-content {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.elle-logo-container {
+  min-height: 100px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.elle-logo {
+  max-height: 150px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-description {
+  font-size: clamp(16px, 2.5vw, 22px);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.featured-right {
+  flex: 0 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 0;
+}
+
+.achievements {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.trusted-text {
+  font-size: clamp(18px, 3vw, 32px);
+  font-weight: 400;
+  line-height: 1.7;
+  text-align: right;
+}
+
+.achievement-item {
+  font-size: clamp(14px, 2vw, 18px);
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: right;
+}
+
+/* Bold Text */
+.bold-text {
+  font-weight: 700;
+}
+
+/* Tablet - 1024px and below */
+@media (max-width: 1024px) {
+  .alore-container {
+    padding: 40px 40px;
+    gap: 50px;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    gap: 40px;
+    align-items: stretch;
+  }
+
+  .hero-text {
+    flex: 1;
+  }
+
+  .hero-vogue {
+    text-align: left;
+    flex: 1;
+  }
+
+  .vogue-logo-container {
+    justify-content: flex-start;
+  }
+
+  .featured-section {
+    flex-direction: column;
+    gap: 40px;
+    align-items: stretch;
+  }
+
+  .featured-left {
+    flex: 1;
+  }
+
+  .featured-right {
+    justify-content: flex-start;
+    flex: 1;
+  }
+
+  .trusted-text {
+    text-align: left;
+  }
+
+  .achievement-item {
+    text-align: left;
+  }
+
+  .featured-label {
+    font-size: clamp(32px, 5vw, 50px);
+  }
+}
+
+/* Mobile - 768px and below */
+@media (max-width: 768px) {
+  .alore-container {
+    padding: 30px 20px;
+    gap: 40px;
+  }
+
+  .hero-main,
+  .alore-text {
+    font-size: clamp(28px, 5vw, 48px);
+  }
+
+  .featured-label {
+    font-size: clamp(28px, 4vw, 40px);
+  }
+
+  .vogue-logo-container {
+    min-height: 60px;
+  }
+
+  .vogue-logo {
+    max-height: 80px;
+  }
+
+  .elle-logo-container {
+    min-height: 70px;
+  }
+
+  .elle-logo {
+    max-height: 120px;
+  }
+
+  .award-text {
+    font-size: clamp(20px, 3.5vw, 32px);
+    padding: 30px 0;
+  }
+
+  .vogue-description,
+  .logo-description,
+  .trusted-text,
+  .achievement-item {
+    font-size: clamp(14px, 2vw, 18px);
+  }
+}
+
+/* Small Mobile - 480px and below */
+@media (max-width: 480px) {
+  .alore-container {
+    padding: 20px 16px;
+    gap: 30px;
+  }
+
+  .hero-main,
+  .alore-text {
+    font-size: clamp(24px, 6vw, 40px);
+  }
+
+  .featured-label {
+    font-size: clamp(22px, 5vw, 32px);
+  }
+
+  .award-text {
+    font-size: clamp(18px, 4vw, 28px);
+    padding: 20px 0;
+  }
+
+  .vogue-description,
+  .logo-description,
+  .trusted-text,
+  .achievement-item {
+    font-size: clamp(13px, 2.5vw, 16px);
+  }
+
+  .elle-content,
+  .achievements {
+    gap: 8px;
+  }
+}

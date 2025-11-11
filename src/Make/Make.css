@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+.main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+        background: radial-gradient(
+    circle,
+    #4D3821 0%,
+    #3B2B1A 24%,
+    #281E12 52%,
+    #261C11 80%
+  );
+}
+
+.video-container1 {
+  position: relative;
+  width: 50vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container1 video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+}
+
+.text-container1 {
+  font-family: Cormorant, serif;
+  position: relative;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  font-size: 4rem;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  color: #E2D2A8;
+}
+

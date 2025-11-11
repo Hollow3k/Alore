@@ -4,5 +4,11 @@
   box-sizing: border-box;
 }
 body{
-  background-color: black;
+  background: radial-gradient(
+    circle,
+    #4D3821 0%,
+    #3B2B1A 24%,
+    #281E12 52%,
+    #261C11 80%
+  );
 }

@@ -40,6 +40,11 @@
   background: rgba(0, 0, 0, 0.3); /* optional dark overlay */
 }
 
+.overlay::selection {
+  color: rgb(255, 255, 255);
+  background: #dccca356;
+}
+
 /* Text styles */
 .overlay-title {
   font-family: 'brilliant', sans-serif;
@@ -71,6 +76,7 @@
   opacity: 0;
   transform: translateY(20px);
   animation: fadeUp 1.5s ease forwards;
+  animation-delay: 1s;
 }
 
 @keyframes fadeUp {
