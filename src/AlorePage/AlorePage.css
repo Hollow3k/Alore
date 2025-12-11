@@ -19,7 +19,7 @@ body {
 
 .alore-container {
   width: 100%;
-  min-height: 100vh;
+  min-height: 20vh;
   background-color: #FCF6ED;
   color: #251B11;
   padding: 40px 60px;

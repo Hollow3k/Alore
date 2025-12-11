@@ -3,7 +3,8 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: #FCF6ED;
+  background: linear-gradient(180deg, #251B11 0%, #000000 100%);
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,7 +26,7 @@
   position: absolute;
   left: clamp(40px, 5vw, 80px);
   bottom: clamp(40px, 8vh, 100px);
-  color: #171717;
+  color: #E0CB9C;
   z-index: 2;
 }
 
@@ -47,8 +48,8 @@
 .featured-cta {
   appearance: none;
   border: none;
-  background: #3d3d3d;
-  color: #dccca3; /* warm gold text */
+  background: #362c24;
+  color: #E0CB9C; /* warm gold text */
   padding: 12px 28px;
   font-size: 15px;
   font-family: 'Cormorant', serif;
@@ -59,5 +60,5 @@
 }
 
 .featured-cta:hover {
-  background: #2d2d2d;
+  background: #46392e;
 }
